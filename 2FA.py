@@ -32,3 +32,7 @@ def generate_2fa_code(secret_key: str) -> str:
     code = str(code).zfill(6)
 
     return code
+
+secret_key = 'ABCDEFGHJKLMNOPQRSTU======' # Example secret key
+code = generate_2fa_code(secret_key)
+print(code) # Output: a 6-digit code (e.g. '123456')
